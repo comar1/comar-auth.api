@@ -1,0 +1,19 @@
+[build]
+  command = "composer install --prefer-dist --no-dev --no-scripts"
+  install = ["composer install --prefer-dist --no-dev --no-scripts"]
+
+[[build]]
+  command = "php artisan config:cache"
+  install = ["composer install --prefer-dist --no-dev --no-scripts"]
+
+[[build]]
+  command = "php artisan route:cache"
+  install = ["composer install --prefer-dist --no-dev --no-scripts"]
+
+[[build]]
+  command = "php artisan view:cache"
+  install = ["composer install --prefer-dist --no-dev --no-scripts"]
+
+[[build]]
+  command = "php artisan optimize"
+  install = ["composer install --prefer-dist --no-dev --no-scripts"]
